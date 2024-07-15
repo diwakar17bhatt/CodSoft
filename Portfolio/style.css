@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    height: 80px;
+    box-shadow: 0.1px 0.1px 20px rgba(0,0,0,0.1);
+}
+.nav{
+    height: 80px;
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10vw;
+   
+}
+.nav ul{
+    display: flex;
+    height: 100%;
+    gap: 3vw;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+    align-items: center;
+    font-size: 19px;
+}
+.port{
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+    cursor: pointer;
+}
+.drop{
+    font-size: 23px;
+    display: none;
+}
+
+ul li:hover{
+    cursor: pointer;
+    border-bottom: 1px solid black;
+    
+}
+
+.middle{
+    height: 692px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    width: 80vw;
+    margin-left: 10vw;
+}
+.box1{
+    height: 100%;
+    width: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.3vw;
+}
+.box1 li{
+    
+    font-size: 22px;
+    list-style: none;
+}
+.box1 li a{
+    color: black;
+}
+.box2{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 8vw;
+    gap: 30px;
+  
+}
+.box2 h1{
+    font-size: 40px;
+    font-family: "Roboto", sans-serif;
+}
+.box2p1{
+    color: #797888;
+    font-size: 20px;
+    letter-spacing: 0.1vw;
+    margin-top: -25px;
+    
+}
+.slogan{
+    color: #797888;
+    padding-right: 6vw;
+    text-align: left;
+    font-family: "Playwrite PE", cursive;
+    
+}
+.box2 button{
+    height: 40px;
+    width: 100px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+.box3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 692px;
+    width: 1600px;
+    margin-right: 20px;
+   
+    
+}
+.img{
+    margin-bottom: 30px;
+    /* margin-right: 190px; */
+    height: 300px;
+    width: 300px;
+    border-radius:50%;
+    background-image: url("profile.jpg");
+    background-size: cover;
+}    
+
+.middle2{
+    height: 100px;
+    width: 100%;
+    background-color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 750px){
+    
+    .hide{
+        display: none;
+    }
+    .drop{
+        display: block;
+    }
+    .middle{
+        margin-top: -15px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+      
+       
+       
+    }
+    .box1{
+        
+        margin-top: -130px;
+        display: flex;
+        height: 30px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 9vw;
+    }
+    .box2{
+        margin-top: -190px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -0.1vw;
+    }
+    .slogan{
+        word-spacing: 1vw;
+        font-family: sans-serif;
+        text-align: center;
+    }
+    .box2 h1{
+        font-size: 25px;
+    }
+    .box2p1{
+        font-size: 10px;
+    }
+    .box3{
+        height: 200px;
+        width: 200px;
+    }
+    .box3 .img{
+        height: 100px;
+        width: 100px;
+        
+    }
+}
+
+
+
+
+
+
+
+
