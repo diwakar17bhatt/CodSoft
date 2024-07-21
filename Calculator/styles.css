@@ -1,0 +1,73 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #212121; /* Dark background color */
+    color: #ffffff; /* Light text color */
+  }
+  
+  .calculator {
+    background-color: #424242; /* Darker calculator background color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    width: 320px;
+    max-width: 100%;
+    text-align: center;
+  }
+  
+  .calculator__display {
+    width: calc(100% - 30px); /* Adjusted to account for padding */
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 36px; /* Larger font size for display */
+    text-align: right;
+    border: none;
+    outline: none;
+    background-color: #333333; /* Darker display background */
+    color: #ffffff; /* Light text color */
+    border-radius: 8px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .calculator__keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+  }
+  
+  .calculator__key {
+    padding: 18px;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    background-color: #616161; /* Darker button background color */
+    color: #ffffff; /* Light text color */
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .calculator__key:hover {
+    background-color: #757575; /* Darker hover state */
+  }
+  
+  .calculator__key.operator {
+    background-color: rgb(172, 61, 172); /* Purple for operator buttons */
+  }
+  
+  .calculator__key.operator:hover {
+    background-color: purple; /* Darker purple for hover state */
+  }
+  
+  .calculator__key--equals {
+    grid-column: span 2;
+    background-color: #4caf50; /* Green for equals button */
+  }
+  
+  .calculator__key--equals:hover {
+    background-color: #388e3c; /* Darker green for hover state */
+  }
+  
